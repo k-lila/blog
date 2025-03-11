@@ -12,11 +12,18 @@ export const FooterStyled = styled.footer`
   button {
     height: 100%;
     width: 100%;
+    max-height: 500px;
+    background-color: lightgray;
+    border: none;
+    border-radius: ${(props) => props.theme.border.radius};
+    transition: all 0.1s ease-in;
+    &:hover {
+      background-color: darkgray;
+    }
   }
   .footer-content {
     background-color: lightgray;
     height: 100%;
-    // border: 1px solid black;
     border-radius: 0.25em;
   }
 `
